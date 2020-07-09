@@ -418,8 +418,8 @@
 
             <section class="payment-method">
                 <div class="container" bis_skin_checked="1">
-                    <h2 style="color:#fff;padding-bottom: 24px;padding-top: 27px;text-align: left;" class="title">Для новоселов!</h2>
-                    <h2 style="color:#fff;padding: 0 0 29px 0;text-align: left;font-size: 26px;" class="title">Бесплатно поможем принять квартиру у застройщика. <br> Решим с ним все вопросы, согласуем перепланировки, оформим документы, проведем авторский надзор на всех стадиях.</h2>
+                    <h2 style="color:#fff;padding-bottom: 22px;padding-top: 35px;text-align: left;font-size: 35px;" class="title">Для новоселов!</h2>
+                    <h2 style="color:#fff;padding: 0px 0 39px 0;text-align: left;font-size: 25px;" class="title">Бесплатно поможем принять квартиру у застройщика. <br> Решим с ним все вопросы, согласуем перепланировки, оформим документы, проведем авторский надзор на всех стадиях.</h2>
                     
                 </div>
                 <!--  /.container  -->
@@ -476,7 +476,7 @@
 
             <section class="price" id="ceni">
                 <div class="container_a">
-                    <h2 class="price_title">Примеры наших работ:</h2>
+                    <h2 class="price_title">Примеры отдельных работ:</h2>
                     <div class="price-wrapper">
                         
                         <!--  /.price-column  -->
@@ -484,8 +484,6 @@
                         <div class="price-column">
                     
                             <div class="price-inner price-inner-second">
-
-                                <h4 class="price-header"><b>Отдельные виды</b><br>работ:</h4>
                                 
                                 <table class="price-table price-table--inline">
                                     <tr>
@@ -659,7 +657,7 @@
                             <span>м<sup>2</sup></span>
                           </div>
             
-                          <label class="visible-mobile calculator-label">Выберите количество комнат:</label>
+                          <!-- <label class="visible-mobile calculator-label">Выберите количество комнат:</label> -->
                           <div class="radio-group" id="rooms2">
                             <input type="radio" name="room" id="room-1" value="25" data-number-room="1" checked="">
                             <label for="room-1" class="text-label">студия</label>
@@ -1980,7 +1978,7 @@
                                     </div>
                                     <div class="our-works-item__job">
                                         <div class="our-works-item__job-item">Возведение стен</div>
-                                        <div class="our-works-item__job-item">Черновые работы/div>
+                                        <div class="our-works-item__job-item">Черновые работы
                                             <div class="our-works-item__job-item">Чистовая отделка</div>
                                             <div class="our-works-item__job-item">Установка мебели и техники</div>
                                         </div>
@@ -3143,6 +3141,44 @@
                 <div class="bg-pattern"></div>
             </section>
 
+            <style>
+                .price-table--inline {
+                    letter-spacing: -0.9px;
+                }
+                @media (max-width: 990px) {
+                    .price-wrapper { 
+                        width: 65%;
+                        margin: 0 auto;
+                    }
+
+                }
+                @media (max-width: 560px) {
+                    .price-wrapper { 
+                        width: 75%;;
+                        margin: 0 auto;
+                    }
+
+                }
+
+                @media (max-width: 395px) {
+                    .price-wrapper { 
+                        width: 90%;
+                        margin: 0 auto;
+                    }
+                    .price-table--inline .price-cell {
+                        font-size: 15px !important;
+                    }
+
+                }
+
+                @media (max-width: 660px) {
+                    .our-works-item__job {
+                        grid-template-columns: repeat(auto-fit,100%);
+                        grid-template-rows: repeat(1,1fr);
+                    }
+                }   
+            </style>
+
             <!---<section class="main-calculator" id="calculator" data-step="1">
 												<div class="container">
 												<h2 class="title">Калькулятор ремонта</h2>
@@ -3950,6 +3986,12 @@
                                 padding: 0 !important;
                             }
                         }
+
+                        @media (max-width: 992px) {
+                            .payment-method:nth-of-type(1) {
+                                padding-bottom: 0px;
+                            }
+                        }
                     </style>
                 </div>
                 <!--  /.container  -->
@@ -4581,15 +4623,65 @@
                             <span class="schema-in">Начинаем работы с составления дизайн-проекта, доставки материалов</span>
                         </div>
 
-                        <div class="schema__item sh-6">
-                            <span class="schema-number">6.</span>Заканчиваем в срок
-                            <span class="schema-in">Вы получаете гарантию 5 лет, подписываете акт о приеме работ.</span>
+                        <div class="schema__item sh-6 sh-9" bis_skin_checked="1">
+                            <span class="schema-number">6.</span>Доставка<span class="schema-in">Проводим закупку и доставку материалов на объект. Оплата по факту</span>
+                        </div>
+                        
+                        <div class="schema__item sh-6 sh-7" bis_skin_checked="1">
+                            <span class="schema-number">7.</span>Заканчиваем ремонт в срок
+                            <span class="schema-in">Заканчиваем ремонт точно в срок и проводим работы в соответствии с графиком</span>
+                        </div>
+                        
+                        <div class="schema__item sh-6 sh-8" bis_skin_checked="1">
+                            <span class="schema-number">8.</span>Гарантия<span class="schema-in">Вы получаете гарантийный сертификат на 5 лет</span>
+                        </div>
+                        
+                        <div class="schema__item sh-6" bis_skin_checked="1">
+                            <span class="schema-number">9.</span>Заканчиваем в срок
+                            <span class="schema-in">Решение о том, что ремонт закончен, принимаете только Вы (подписывая акт выполненных работ, производится оплата)</span>
                         </div>
                     </div>
                     <div class="call-btn">
                         <a class="btn-callback callback-btn" onclick="ym(64660867,'reachGoal','zam-besp'); return true">Вызвать замерщика бесплатно</a>
                     </div>
                 </div>
+                <style>
+                    .schema__item.sh-7:after, .schema__item.sh-8:after {
+                        content: '';
+                        position: absolute;
+                        right: 10px;
+                        background: url('assets/img/Arrow.gif') center no-repeat;
+                        width: 36px;
+                        height: 8px;
+                        display: block;
+                        top: 8px;
+                    }
+                    .schema__item.sh-9:before {
+                        background-image: url('assets/img/delivery-icon.png');
+                    }
+                    .schema__item.sh-7:before {
+                        background-image: url('assets/img/intime-icon.png');
+                    }
+                    .schema__item.sh-8:before {
+                        background-image: url('assets/img/sertificate-icon.png');
+                    }
+
+                    @media (max-width: 488px) {
+                        .first-screen__title .nobr {
+                            font-size: 26px;
+                        }
+                    }
+
+                    @media (max-width: 358px) {
+                        .first-screen__title .nobr {
+                            font-size: 22px;
+                        }
+                        
+                        .first-screen__title .nobr > .fr{
+                            font-size: 24px !important;
+                        }
+                    }
+                </style>
                 <!--  /.container  -->
             </section>
             <!-- <section class="FAQ">
@@ -4820,7 +4912,7 @@
     <script src="assets\js\jquery-1.12.4.min.js"></script>
 
     <style type="text/css">
-     .mfp-hide_a{display:none!important}button::-moz-focus-inner{padding:0;border:0}@font-face{font-family:'Open Sans Condensed';src:local('Open Sans Cond Light'),local(OpenSans-CondensedLight),url(assets/fonts/opensanscondlight.woff2) format("woff2"),url(assets/fonts/opensanscondlight.woff) format("woff"),url(assets/fonts/opensanscondlight.ttf) format("truetype");font-weight:300;font-style:normal;font-display:swap}@font-face{font-family:'Open Sans Condensed';src:local('Open Sans Cond Light Italic'),local(OpenSans-CondensedLightItalic),url(assets/fonts/opensanscondlightitalic.woff2) format("woff2"),url(assets/fonts/opensanscondlightitalic.woff) format("woff"),url(assets/fonts/opensanscondlightitalic.ttf) format("truetype");font-weight:300;font-style:italic;font-display:swap}@font-face{font-family:'Open Sans Condensed';src:local('Open Sans Condensed Bold'),local(OpenSans-CondensedBold),url(assets/fonts/opensanscondensedbold.woff2) format("woff2"),url(assets/fonts/opensanscondensedbold.woff) format("woff"),url(assets/fonts/opensanscondensedbold.ttf) format("truetype");font-weight:700;font-style:normal;font-display:swap}.popup-inner_a{position:relative;max-width:800px;padding:20px;margin:0 auto;background:#fff;-webkit-box-sizing:border-box;box-sizing:border-box}.popup-title_a{font-size:26px;padding:20px 0;color:#003c59;text-align:center}.popup-inner_a table{width:100%;padding:10px;border:1px;border-collapse:collapse;border-spacing:0}.popup-inner_a table tr{border:1px solid #ffd300;border-bottom:1px solid #ccc}.popup-inner_a td{font-family:Qanelas-Regular;font-size:12px;text-align:center;border-left:1px solid #ffd300}.popup-inner_a td:nth-child(2){text-align:left;padding-left:20px}.popup-text_a{margin-top:10px}.hidden-mobile{display:none}.visible-mobile_a{display:block}.clearfix:after{content:'';display:table;clear:both}.container_a{width:auto;padding:0 15px;margin:0 auto;-webkit-box-sizing:border-box;box-sizing:border-box}.bghtml{position:fixed;top:0;bottom:0;left:0;right:0;background-image:url(assets/img/bg.jpg);background-size:cover;background-position:top center;z-index:-99999}.form-wrapper{display:block;text-align:center;margin:0 0 15px;padding:0}.form-input{display:inline-block;vertical-align:top;width:100%;max-width:320px;font-size:16px;color:#0c1327;padding:14px 20px;border-radius:3px;border:2px solid #e0e0e0;background-color:#fff;-webkit-box-shadow:inset 3px 3px 1px 0 #f4f4f4;box-shadow:inset 3px 3px 1px 0 #f4f4f4;-webkit-box-sizing:border-box;box-sizing:border-box;outline:0}.form-button{display:inline-block;vertical-align:top;font-family:Qanelas-Bold,Arial,sans-serif;font-size:17px;text-align:center;text-decoration:none;color:#fff;letter-spacing:.6px;text-transform:uppercase;text-shadow:0 -1px 0 rgba(0,0,0,.2);border:1px solid #0052bd;border-radius:3px;padding:14px 10px;margin:0 auto;background-image:-o-linear-gradient(top,#59b3ff 0,#0e6dee 30%,#0050bd 100%);background-image:-webkit-gradient(linear,left top, left bottom,color-stop(0, #59b3ff),color-stop(30%, #0e6dee),to(#0050bd));background-image:linear-gradient(180deg,#59b3ff 0,#0e6dee 30%,#0050bd 100%);cursor:pointer;-webkit-box-sizing:border-box;box-sizing:border-box;font-family:'Museo Sans Cyrl 500',Arial,sans-serif!important}.form-button:hover{background-image:-o-linear-gradient(top,#59b3ff 0,#0e6dee 70%,#0456c5 100%);background-image:-webkit-gradient(linear,left top, left bottom,color-stop(0, #59b3ff),color-stop(70%, #0e6dee),to(#0456c5));background-image:linear-gradient(180deg,#59b3ff 0,#0e6dee 70%,#0456c5 100%)}.price_title{font-family:'Museo Sans Cyrl 700',Arial,sans-serif;font-weight:600;font-style:normal;font-size:38px;padding:87px 0 67px;line-height:1.1;letter-spacing:1px;text-align:center;color:#17234b}.title-description{font-size:18px;text-align:center;color:#ffd300;margin:0 0 25px}.price{background-color:#f5f6f6;padding-bottom:60px}.price-title{font-size:22px;font-weight:400;text-align:center;color:#000;margin:0 0 5px}.price-mark{display:block;font-size:16px;font-style:italic;color:#ffd300;text-align:center;margin:0 0 25px}.price-column{color:#000;margin-bottom:25px}.price-column:last-child{margin-bottom:0}.price-inner{position:relative;text-align:center;padding:135px 15px 15px;border:2px solid #125ca5;border-radius:14px;-webkit-transition:.4s;-o-transition:.4s;transition:.4s}.price-inner:before{content:'';position:absolute;top:-4px;left:50%;width:220px;height:140px;margin-left:-110px;background-repeat:no-repeat;background-position:top center;background-size: contain;}.price-inner-first:before{background-image:url(assets/img/price-before-1.png)}.price-inner-second:before{background-image:url(assets/img/price-before-2.png)}.price-header{font-family:'Museo Sans Cyrl 700',Arial,sans-serif;font-size:20px;font-weight:400;text-align:center;margin:0 0 25px}.price-header b{position:relative;text-transform:uppercase;letter-spacing:1.05px;font-size:25px;color:#00509e}.price-table{width:100%}.price-cell{display:block;font-size:14px;text-align:left;padding:0 0 10px}.price-cell--align{font-size:18px;text-align:center;padding:0 0 25px}.price-table--inline .price-cell--align{padding-bottom:10px;min-width:80px}.price-table--inline .price-cell{display:table-cell;vertical-align:top}.price-table--inline .price-cell--align{text-align:right}.price-table tr:last-child .price-cell--align{padding-bottom:0}.price-cell span{display:block;font-size:20px;color:#000;font-weight:600}.price-table--inline .price-cell{font-size:14px}.price .form-button{margin:24px auto 0;width:auto;font-family:'Museo Sans Cyrl 500',Arial,sans-serif}@media (min-width:585px){.bghtml{background-image:url(assets/img/bg.jpg)}.popup-inner_a td{font-size:16px}.popup-title_a{font-size:42px}}@media (min-width:768px){.container_a{width:750px}.bghtml{background-image:url(assets/img/bg.jpg)}.visible-mobile_a{display:none}.price-header{font-size:26px}.price-inner{padding-top:275px}.price-inner:before{width:400px;height:255px;margin-left:-200px}.price-inner-first:before{background-image:url(assets/img/price-before-1.png)}.price-inner-second:before{background-image:url(assets/img/price-before-2.png)}.price-cell span,.price-cell--align,.price-table--inline .price-cell{font-size:20px}}@media (min-width:992px){.container_a{width:950px}.hidden-desktop{display:none!important}.hidden-mobile{display:block!important}.bghtml{background-image:url(assets/img/bg.jpg)}.form-wrapper{display:inline-block;vertical-align:top;width:280px;margin:0 20px 40px}.form-button{margin-bottom:30px}.calculator-title{font-size:38px;margin:0 0 60px}.price .container_a{font-size:0}.price-wrapper{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;width:100%;justify-content: center;}.price-column{display:inline-block;vertical-align:top;width:62%;margin-right:2%;margin-bottom:0}.price-column:last-child{margin-right:0}.price-inner{padding:275px 30px 33px;height:calc(100% - 317px)}.price-inner:hover{-webkit-transform:translateY(-5px);-ms-transform:translateY(-5px);transform:translateY(-5px);-webkit-box-shadow:0 7px 25px 0 rgba(0,0,0,.2);box-shadow:0 7px 25px 0 rgba(0,0,0,.2);-webkit-transition:.4s;-o-transition:.4s;transition:.4s;border:2px solid #125ca5}.price-mark,.price-title{text-align:left}.price-cell{float:left;width:70%;font-size:16px;padding:0 0 20px}.price-cell--align{float:right;width:30%;text-align:right}.price-cell span,.price-cell--align{font-size:20px}}@media (min-width:1200px){.container_a{width:1170px}.bghtml{background-image:url(assets/img/bg.jpg)}.form-button,.form-input{font-size:18px}.price-header{font-size:27px}.title-description{font-size:20px}.price-cell span,.price-cell--align,.price-table--inline .price-cell{font-size:25px}}@media (max-width:768px){.price_title{font-size:28px;padding:57px 0 37px}}
+     .mfp-hide_a{display:none!important}button::-moz-focus-inner{padding:0;border:0}@font-face{font-family:'Open Sans Condensed';src:local('Open Sans Cond Light'),local(OpenSans-CondensedLight),url(assets/fonts/opensanscondlight.woff2) format("woff2"),url(assets/fonts/opensanscondlight.woff) format("woff"),url(assets/fonts/opensanscondlight.ttf) format("truetype");font-weight:300;font-style:normal;font-display:swap}@font-face{font-family:'Open Sans Condensed';src:local('Open Sans Cond Light Italic'),local(OpenSans-CondensedLightItalic),url(assets/fonts/opensanscondlightitalic.woff2) format("woff2"),url(assets/fonts/opensanscondlightitalic.woff) format("woff"),url(assets/fonts/opensanscondlightitalic.ttf) format("truetype");font-weight:300;font-style:italic;font-display:swap}@font-face{font-family:'Open Sans Condensed';src:local('Open Sans Condensed Bold'),local(OpenSans-CondensedBold),url(assets/fonts/opensanscondensedbold.woff2) format("woff2"),url(assets/fonts/opensanscondensedbold.woff) format("woff"),url(assets/fonts/opensanscondensedbold.ttf) format("truetype");font-weight:700;font-style:normal;font-display:swap}.popup-inner_a{position:relative;max-width:800px;padding:20px;margin:0 auto;background:#fff;-webkit-box-sizing:border-box;box-sizing:border-box}.popup-title_a{font-size:26px;padding:20px 0;color:#003c59;text-align:center}.popup-inner_a table{width:100%;padding:10px;border:1px;border-collapse:collapse;border-spacing:0}.popup-inner_a table tr{border:1px solid #ffd300;border-bottom:1px solid #ccc}.popup-inner_a td{font-family:Qanelas-Regular;font-size:12px;text-align:center;border-left:1px solid #ffd300}.popup-inner_a td:nth-child(2){text-align:left;padding-left:20px}.popup-text_a{margin-top:10px}.hidden-mobile{display:none}.visible-mobile_a{display:block}.clearfix:after{content:'';display:table;clear:both}.container_a{width:auto;padding:0 15px;margin:0 auto;-webkit-box-sizing:border-box;box-sizing:border-box}.bghtml{position:fixed;top:0;bottom:0;left:0;right:0;background-image:url(assets/img/bg.jpg);background-size:cover;background-position:top center;z-index:-99999}.form-wrapper{display:block;text-align:center;margin:0 0 15px;padding:0}.form-input{display:inline-block;vertical-align:top;width:100%;max-width:320px;font-size:16px;color:#0c1327;padding:14px 20px;border-radius:3px;border:2px solid #e0e0e0;background-color:#fff;-webkit-box-shadow:inset 3px 3px 1px 0 #f4f4f4;box-shadow:inset 3px 3px 1px 0 #f4f4f4;-webkit-box-sizing:border-box;box-sizing:border-box;outline:0}.form-button{display:inline-block;vertical-align:top;font-family:Qanelas-Bold,Arial,sans-serif;font-size:17px;text-align:center;text-decoration:none;color:#fff;letter-spacing:.6px;text-transform:uppercase;text-shadow:0 -1px 0 rgba(0,0,0,.2);border:1px solid #0052bd;border-radius:3px;padding:14px 10px;margin:0 auto;background-image:-o-linear-gradient(top,#59b3ff 0,#0e6dee 30%,#0050bd 100%);background-image:-webkit-gradient(linear,left top, left bottom,color-stop(0, #59b3ff),color-stop(30%, #0e6dee),to(#0050bd));background-image:linear-gradient(180deg,#59b3ff 0,#0e6dee 30%,#0050bd 100%);cursor:pointer;-webkit-box-sizing:border-box;box-sizing:border-box;font-family:'Museo Sans Cyrl 500',Arial,sans-serif!important}.form-button:hover{background-image:-o-linear-gradient(top,#59b3ff 0,#0e6dee 70%,#0456c5 100%);background-image:-webkit-gradient(linear,left top, left bottom,color-stop(0, #59b3ff),color-stop(70%, #0e6dee),to(#0456c5));background-image:linear-gradient(180deg,#59b3ff 0,#0e6dee 70%,#0456c5 100%)}.price_title{font-family:'Museo Sans Cyrl 700',Arial,sans-serif;font-weight:600;font-style:normal;font-size:38px;padding:87px 0 67px;line-height:1.1;letter-spacing:1px;text-align:center;color:#17234b}.title-description{font-size:18px;text-align:center;color:#ffd300;margin:0 0 25px}.price{background-color:#f5f6f6;padding-bottom:60px}.price-title{font-size:22px;font-weight:400;text-align:center;color:#000;margin:0 0 5px}.price-mark{display:block;font-size:16px;font-style:italic;color:#ffd300;text-align:center;margin:0 0 25px}.price-column{color:#000;margin-bottom:25px}.price-column:last-child{margin-bottom:0}.price-inner{position:relative;text-align:center;padding:135px 15px 15px;border:2px solid #125ca5;border-radius:14px;-webkit-transition:.4s;-o-transition:.4s;transition:.4s}.price-inner:before{content:'';position:absolute;top:-4px;left:50%;width:220px;height:140px;margin-left:-110px;background-repeat:no-repeat;background-position:top center;background-size: contain;}.price-inner-first:before{background-image:url(assets/img/price-before-1.png)}.price-inner-second:before{background-image:url(assets/img/price-before-2.png)}.price-header{font-family:'Museo Sans Cyrl 700',Arial,sans-serif;font-size:20px;font-weight:400;text-align:center;margin:0 0 25px}.price-header b{position:relative;text-transform:uppercase;letter-spacing:1.05px;font-size:25px;color:#00509e}.price-table{width:100%}.price-cell{display:block;font-size:14px;text-align:left;padding:0 0 10px}.price-cell--align{font-size:18px;text-align:center;padding:0 0 25px}.price-table--inline .price-cell--align{padding-bottom:10px;min-width:80px}.price-table--inline .price-cell{display:table-cell;vertical-align:top}.price-table--inline .price-cell--align{text-align:right}.price-table tr:last-child .price-cell--align{padding-bottom:0}.price-cell span{display:block;font-size:20px;color:#000;font-weight:600}.price-table--inline .price-cell{font-size:17px}.price .form-button{margin:24px auto 0;width:auto;font-family:'Museo Sans Cyrl 500',Arial,sans-serif}@media (min-width:585px){.bghtml{background-image:url(assets/img/bg.jpg)}.popup-inner_a td{font-size:16px}.popup-title_a{font-size:42px}}@media (min-width:768px){.container_a{width:750px}.bghtml{background-image:url(assets/img/bg.jpg)}.visible-mobile_a{display:none}.price-header{font-size:26px}.price-inner{padding-top:275px}.price-inner:before{width:380px;height:235px;margin-left:-200px}.price-inner-first:before{background-image:url(assets/img/price-before-1.png)}.price-inner-second:before{background-image:url(assets/img/price-before-2.png)}.price-cell span,.price-cell--align,.price-table--inline .price-cell{font-size:20px}}@media (min-width:992px){.container_a{width:950px}.hidden-desktop{display:none!important}.hidden-mobile{display:block!important}.bghtml{background-image:url(assets/img/bg.jpg)}.form-wrapper{display:inline-block;vertical-align:top;width:280px;margin:0 20px 40px}.form-button{margin-bottom:30px}.calculator-title{font-size:38px;margin:0 0 60px}.price .container_a{font-size:0}.price-wrapper{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;width:100%;justify-content: center;}.price-column{display:inline-block;vertical-align:top;width:50%;margin-right:2%;margin-bottom:0}.price-column:last-child{margin-right:0}.price-inner{padding:275px 30px 33px;height:calc(100% - 317px)}.price-inner:hover{-webkit-transform:translateY(-5px);-ms-transform:translateY(-5px);transform:translateY(-5px);-webkit-box-shadow:0 7px 25px 0 rgba(0,0,0,.2);box-shadow:0 7px 25px 0 rgba(0,0,0,.2);-webkit-transition:.4s;-o-transition:.4s;transition:.4s;border:2px solid #125ca5}.price-mark,.price-title{text-align:left}.price-cell{float:left;width:70%;font-size:16px;padding:0 0 20px}.price-cell--align{float:right;width:30%;text-align:right}.price-cell span,.price-cell--align{font-size:20px}}@media (min-width:1200px){.container_a{width:1170px}.bghtml{background-image:url(assets/img/bg.jpg)}.form-button,.form-input{font-size:18px}.price-header{font-size:27px}.title-description{font-size:20px}.price-cell span,.price-cell--align,.price-table--inline .price-cell{font-size:25px}}@media (max-width:768px){.price_title{font-size:28px;padding:57px 0 37px}}
     </style>
     
 
