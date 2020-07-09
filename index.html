@@ -212,12 +212,12 @@
                     <div class="first-screen__wrapper clear">
 
                         <h1 class="first-screen__title ">
-                            <span class="nobr lr">Ремонт квартиры</span>
-                            <span class="nobr">начнем
-                                <span class="fr">бесплатно!</span>
+                            <span class="nobr lr">Ремонт квартир</span>
+                            <span class="nobr">от проекта до
+                                <span class="fr">реализации!</span>
                             </span>
                             <span class="small">
-                                <span style="color:#fff;">Пришлите нам свой рассчёт ремонта - Сделаем дешевле и лучше!</span>
+                                <span style="color:#fff;">Сравнивают все, а выбирают нас!</span>
                             </span>
                         </h1>
 
@@ -416,6 +416,15 @@
             <div class="fix-border-right"></div>
             <div class="fix-border-bottom"></div>
 
+            <section class="payment-method">
+                <div class="container" bis_skin_checked="1">
+                    <h2 style="color:#fff;padding-bottom: 24px;padding-top: 27px;text-align: left;" class="title">Для новоселов!</h2>
+                    <h2 style="color:#fff;padding: 0 0 29px 0;text-align: left;font-size: 26px;" class="title">Бесплатно поможем принять квартиру у застройщика. <br> Решим с ним все вопросы, согласуем перепланировки, оформим документы, проведем авторский надзор на всех стадиях.</h2>
+                    
+                </div>
+                <!--  /.container  -->
+            </section>
+
             <section class="video-remont">
                 <div class="container clear">
 
@@ -467,38 +476,9 @@
 
             <section class="price" id="ceni">
                 <div class="container_a">
-                    <h2 class="price_title">Вы можете у нас заказать:</h2>
+                    <h2 class="price_title">Примеры наших работ:</h2>
                     <div class="price-wrapper">
-                        <div class="price-column">
-                     
-                            <div class="price-inner price-inner-first">
-
-                                <h4 class="price-header"><b>Комплексные</b><br>ремонты:</h4>
-                                
-                                <table class="price-table">
-                                    <tr>
-                                        <td class="price-cell"><span>Косметический ремонт комнат</span> (входит: демонтаж существующих покрытий; поклейка обоев; окраска потолков; укладка ламината; монтаж плинтусов)</td>
-                                        <td class="price-cell price-cell--align">от 16 000 р.</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="price-cell"><span>Капитальный ремонт квартиры</span> (входит: демонтаж существующих покрытий; выравнивание пола; частичная штукатурка стен; грунтовка пола, стен и потолка; шпаклевка стен; поклейка обоев; окраска потолков; укладка ламината; монтаж плинтусов)</td>
-                                        <td class="price-cell price-cell--align">от 33 000 р.</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="price-cell"><span>Ремонт квартиры под ключ</span> (входит: демонтаж существующих покрытий; поклейка обоев; окраска потолков; укладка ламината; монтаж плинтусов. ВСЕ МАТЕРИАЛЫ ВКЛЮЧЕНЫ В СТОИМОСТЬ)</td>
-                                        <td class="price-cell price-cell--align">от 47 000 р.</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="price-cell"><span>Евроремонт квартиры</span> (входит: демонтаж существующих покрытий; стяжка пола; штукатурка стен; выравнивание потолка; замена электрики; грунтовка пола, стен и потолка; шпаклевка стен и потолка; поклейка обоев; окраска потолков; укладка паркетной доски; монтаж плинтусов; замена батарей; влажная уборка помещения)</td>
-                                        <td class="price-cell price-cell--align">от 63 500 р.</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="price-cell"><span>Ремонт ванной квартиры</span> (входит: демонтаж существующих покрытий; установка панелей; установка реечного потолка; укладка плитки на пол; монтаж кранов)</td>
-                                        <td class="price-cell price-cell--align">от 18 800 р.</td>
-                                    </tr>
-                                </table>
-                            </div>        
-                        </div>
+                        
                         <!--  /.price-column  -->
                         
                         <div class="price-column">
@@ -559,25 +539,26 @@
                   <div class="tab-content">
                     <h3 class="calculator-title">Калькулятор ремонта</h3>
                     <ul id="calculator__tab" class="calculator-items hidden-mobile">
-                      <li class="calculator-item active" data-step="1">
-                        <a href="#">Комната</a>
+                      <li class="calculator-item " data-step="1" style="display:none !important">
+                        <a href="#" >Комната</a>
                       </li>
-                      <li class="calculator-item" data-step="2">
+                      <li class="calculator-item active" data-step="2">
                         <a href="#">Квартира</a>
                       </li>
                       <li class="calculator-item" data-step="3">
                         <a href="#">Новостройка</a>
                       </li>
                     </ul>
-            
+                    
                     <div id="calculator-tab-mob" class="form-wrapper form-wrapper-items hidden-desktop">
                       <select>
-                        <option value="1" class="active" data-step="1">Комната</option>
-                        <option value="2" data-step="2">Квартира</option>
+                          <!-- !WARN: -->
+                        <!-- <option value="1" data-step="1" style="display:none !important">Комната</option> -->
+                        <option value="2" class="active"  data-step="2">Квартира</option>
                         <option value="3" data-step="3">Новостройка</option>
                       </select>
                     </div>
-                    <div class="tab-pane active" id="step-1">
+                    <div class="tab-pane " id="step-1">
                       <div id="room">
                         <form action="sendCalc.php" method="post" id="calculatorForm" onsubmit="ym(64660867,'reachGoal','nachat-rem'); return true;">
             
@@ -662,14 +643,13 @@
                             <input type="hidden" name="utm_keyword" value="">
                             <input type="hidden" name="utm_term" value="">
             
-                            <button type="submit" class="form-button btn_main" id="calculator-submit-1" >Начать ремонт
-                              сейчас</button>
+                            <button type="submit" class="form-button btn_main" id="calculator-submit-1" >Проконсультироваться</button>
                           </div>
                         </form>
                       </div>
                     </div>
                     <!-- /.tab-pane  -->
-                    <div class="tab-pane" id="step-2">
+                    <div class="tab-pane active" id="step-2">
                       <div id="flat">
                         <form action="sendCalc.php" method="post" onsubmit="ym(64660867,'reachGoal','nachat-rem'); return true;">
             
@@ -767,8 +747,7 @@
                             <input type="hidden" name="url" value="studia-remontov.ru/">
                             <input type="hidden" name="utm_keyword" value="">
                             <input type="hidden" name="utm_term" value="">
-                            <button type="submit" class="form-button btn_main" id="calculator-submit-2">Пригласить
-                              специалиста</button>
+                            <button type="submit" class="form-button btn_main" id="calculator-submit-2">Проконсультироваться</button>
                           </div>
                         </form>
                       </div>
@@ -1129,7 +1108,7 @@
                                                 Цена конкурентов
                                             </div>
                                             <div class="our-works-item__characteristics-value">
-                                                <span class="text-grey">950 000+ руб.</div>
+                                                <span class="text-grey">от 1 000 000 руб.</div>
                                         </div>
                                     </div>
                                     <div class="our-works-item__job">
@@ -1458,7 +1437,7 @@
                                                 Цена у нас
                                             </div>
                                             <div class="our-works-item__characteristics-value">
-                                                <span class="text-red">450 700 руб
+                                                <span class="text-red">500 000 руб
                                                     <sup></sup>
                                                 </span>
                                             </div>
@@ -1468,7 +1447,7 @@
                                                 Цена конкурентов
                                             </div>
                                             <div class="our-works-item__characteristics-value">
-                                                <span class="text-grey">600 000+ руб </div>
+                                                <span class="text-grey">от 700 000 руб </div>
                                         </div>
                                     </div>
                                     <div class="our-works-item__job">
@@ -1589,7 +1568,7 @@
                                                 Сроки
                                             </div>
                                             <div class="our-works-item__characteristics-value">
-                                                -
+                                                3 месяца
                                             </div>
                                         </div>
                                         <div>
@@ -1597,7 +1576,7 @@
                                                 Цена у нас
                                             </div>
                                             <div class="our-works-item__characteristics-value">
-                                                <span class="text-red">510 000 руб
+                                                <span class="text-red">560 000 руб
                                                     <sup></sup>
                                                 </span>
                                             </div>
@@ -1607,7 +1586,7 @@
                                                 Цена конкурентов
                                             </div>
                                             <div class="our-works-item__characteristics-value">
-                                                <span class="text-grey">750 000+ руб.</div>
+                                                <span class="text-grey">от 750 000 руб.</div>
                                         </div>
                                     </div>
                                     <div class="our-works-item__job">
@@ -1786,7 +1765,7 @@
                                 </div>
                                 <div class="our-works-item__right">
                                     <div class="our-works-item__title">
-                                        Ремонт четерхкомнатной квартиры 132 м2
+                                        Ремонт четырехкомнатной квартиры 132 м2
                                     </div>
                                     <div class="our-works-item__description">
                                         р-н Басманный
@@ -1797,7 +1776,7 @@
                                                 Площадь
                                             </div>
                                             <div class="our-works-item__characteristics-value">
-                                                132 м
+                                                200 м
                                                 <sup>2</sup>
                                             </div>
                                         </div>
@@ -1806,7 +1785,7 @@
                                                 Сроки
                                             </div>
                                             <div class="our-works-item__characteristics-value">
-                                                4 мес
+                                                4 месяца
                                             </div>
                                         </div>
                                         <div>
@@ -1814,7 +1793,7 @@
                                                 Цена у нас
                                             </div>
                                             <div class="our-works-item__characteristics-value">
-                                                <span class="text-red">720 700 руб.
+                                                <span class="text-red">1 600 000 руб.
                                                     <sup></sup>
                                                 </span>
                                             </div>
@@ -1824,7 +1803,7 @@
                                                 Цена конкурентов
                                             </div>
                                             <div class="our-works-item__characteristics-value">
-                                                <span class="text-grey">1 060 000</div>
+                                                <span class="text-grey">от 2 000 000 руб.</div>
                                         </div>
                                     </div>
                                     <div class="our-works-item__job">
@@ -1958,7 +1937,7 @@
                                 </div>
                                 <div class="our-works-item__right">
                                     <div class="our-works-item__title">
-                                        Ремонт двухкомнатной квартиры 80м2
+                                        Ремонт двухкомнатной квартиры 73м2
                                     </div>
                                     <div class="our-works-item__description">
                                         р-н Южное Бутово
@@ -1969,7 +1948,7 @@
                                                 Ботанический сад
                                             </div>
                                             <div class="our-works-item__characteristics-value">
-                                                80 м
+                                                73 м
                                                 <sup>2</sup>
                                             </div>
                                         </div>
@@ -1978,7 +1957,7 @@
                                                 Сроки
                                             </div>
                                             <div class="our-works-item__characteristics-value">
-                                                3,5 мес
+                                                3,5 месяца
                                             </div>
                                         </div>
                                         <div>
@@ -1986,7 +1965,7 @@
                                                 Цена у нас
                                             </div>
                                             <div class="our-works-item__characteristics-value">
-                                                <span class="text-red">490 700 руб.
+                                                <span class="text-red">570 000 руб.
                                                     <sup></sup>
                                                 </span>
                                             </div>
@@ -1996,7 +1975,7 @@
                                                 Цена конкурентов
                                             </div>
                                             <div class="our-works-item__characteristics-value">
-                                                <span class="text-grey">650 000 + руб.</div>
+                                                <span class="text-grey">от 700 000 руб.</div>
                                         </div>
                                     </div>
                                     <div class="our-works-item__job">
@@ -2219,7 +2198,7 @@
                                     </div>
                                     <div class="our-works-item__right">
                                         <div class="our-works-item__title">
-                                            Ремонт в пятикомнатной квартире 140 м2
+                                            Ремонт в пятикомнатной квартире 220 м2
                                         </div>
                                         <div class="our-works-item__description">
                                             р-н Тверской
@@ -2230,7 +2209,7 @@
                                                     Площадь
                                                 </div>
                                                 <div class="our-works-item__characteristics-value">
-                                                    132 м
+                                                    220 м
                                                     <sup>2</sup>
                                                 </div>
                                             </div>
@@ -2239,7 +2218,7 @@
                                                     Сроки
                                                 </div>
                                                 <div class="our-works-item__characteristics-value">
-                                                    4 мес
+                                                    4 месяца
                                                 </div>
                                             </div>
                                             <div>
@@ -2247,7 +2226,7 @@
                                                     Цена у нас
                                                 </div>
                                                 <div class="our-works-item__characteristics-value">
-                                                    <span class="text-red">720 700 руб.
+                                                    <span class="text-red">1 200 000 руб.
                                                         <sup></sup>
                                                     </span>
                                                 </div>
@@ -2257,7 +2236,7 @@
                                                     Цена конкурентов
                                                 </div>
                                                 <div class="our-works-item__characteristics-value">
-                                                    <span class="text-grey">1 060 000</div>
+                                                    <span class="text-grey">от 1 500 000 руб.</div>
                                             </div>
                                         </div>
                                         <div class="our-works-item__job">
@@ -2467,7 +2446,7 @@
                                                     Площадь
                                                 </div>
                                                 <div class="our-works-item__characteristics-value">
-                                                    132 м
+                                                    240 м
                                                     <sup>2</sup>
                                                 </div>
                                             </div>
@@ -2476,7 +2455,7 @@
                                                     Сроки
                                                 </div>
                                                 <div class="our-works-item__characteristics-value">
-                                                    4 мес
+                                                    4 месяца
                                                 </div>
                                             </div>
                                             <div>
@@ -2484,7 +2463,7 @@
                                                     Цена у нас
                                                 </div>
                                                 <div class="our-works-item__characteristics-value">
-                                                    <span class="text-red">720 700 руб.
+                                                    <span class="text-red">1 500 000 руб.
                                                         <sup></sup>
                                                     </span>
                                                 </div>
@@ -2494,7 +2473,7 @@
                                                     Цена конкурентов
                                                 </div>
                                                 <div class="our-works-item__characteristics-value">
-                                                    <span class="text-grey">1 060 000</div>
+                                                    <span class="text-grey">от 2 000 000 руб.</div>
                                             </div>
                                         </div>
                                         <div class="our-works-item__job">
@@ -3596,8 +3575,8 @@
                     </div>
 
                     <div class="discount__block">
-                        <h2 class="title">СДЕЛАЙТЕ ФОТО
-                            <span class="nobr">сэкономьте на ремонте!</span>
+                        <h2 class="title" style="line-height: 1.3;">СДЕЛАЙ ФОТО / <br>ВИДЕО ОТЗЫВ
+                            <span class="nobr">Получи 5% от ремонта!</span>
                         </h2>
 
                         <ul class="discount__items">
@@ -3852,13 +3831,13 @@
                     </ul>
                 </div>
             </div>
-            <section class="features">
+            <section class="features" style="padding-bottom: 65px;">
                 <div class="container clear">
                     <h2 class="title">Мы отличаемся от конкурентов</h2>
 
                     <div class="features__column">
                         <div class="features__inner">
-                            <h3>Возможные проблемы клиентов</h3>
+                            <h3>Часто встретите у конкурентов</h3>
 
                             <ul class="features__items">
                                 <li class="features__item features__item--1">
@@ -3890,7 +3869,7 @@
 
                             <ul class="features__items">
                                 <li class="features__item features__item--1">
-                                    <span class="bold">Надежность</span> Имеем строительную лицензию и допуск СРО. Гарантия до 3 лет на ремонт</li>
+                                    <span class="bold">Надежность</span> Имеем строительную лицензию и допуск СРО. Гарантия до 5 лет на ремонт</li>
 
                                 <li class="features__item features__item--2">
                                     <span class="bold">Бесплатно начинаем ремонт</span> Оплата выполненного ремонта только по факту или в рассрочку</li>
@@ -3910,6 +3889,68 @@
                         </div>
                     </div>
 
+                    <div class="features__column features__column--plus features__column--plus2" bis_skin_checked="1" style="
+    float: none;
+    display: block;
+    margin: 0 auto;
+">
+                        <div class="features__inner" bis_skin_checked="1" style="
+    padding-top: 40px;
+    padding-left: 38px;
+">
+                            
+
+                            <ul class="features__items">
+                                <li class="features__item features__item--1 features3__item--1" style="    margin-bottom: 40px;">
+                                    <span class="bold">Производим работы без проживания на объекте.</span></li>
+
+                                <li class="features__item features__item--2
+                                features3__item--2">
+                                    <span class="bold">Цены ниже конкурентов.</span> </li>
+
+                                <li class="features__item features__item--3
+                                features3__item--3">
+                                    <span class="bold">Решаем все вопросы за вас</span> Согласование о перепланировке, отключение стояков, электро-проект, акты скрытых работ для управляющей компании.</li>
+
+                                <li class="features__item features__item--4
+                                features3__item--4">
+                                    <span class="bold">Авторский надзор на всех стадиях проекта</span></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <style>
+                        .features3__item--1:before, .features3__item--2:before,.features3__item--3:before,.features3__item--4:before {
+                            width: 49px;
+                            height: 49px;
+                            margin-top: -25px;
+                            background-size: cover;
+                            border: 1px solid black;
+                            border-radius: 50%;
+                        }
+
+                        .features3__item--1:before {
+                            background: url(assets/img/bed.png) center no-repeat; 
+                        }
+
+                        .features3__item--2:before {
+                            background: url(assets/img/money-bag.png) center no-repeat; 
+                        }
+
+                        .features3__item--3:before {
+                            background: url(assets/img/brain.png) center no-repeat; 
+                        }
+
+                        .features3__item--4:before {
+                            background: url(assets/img/eye.png) center no-repeat; 
+                        }
+                        
+                        @media (max-width: 992px) {
+                            .features__column--plus2 .features__inner{
+                                padding: 0 !important;
+                            }
+                        }
+                    </style>
                 </div>
                 <!--  /.container  -->
             </section>
@@ -3935,7 +3976,7 @@
                         <p>«Центр Строй» юридически зарегистрированная ремонтная компания</p>
 
                         <p>Работая с нами, вы имеете полное юридическое обеспечение Вашего ремонта: договор, акты выполненных
-                            работ, акт закрытия работ, гарантию до 3 лет на весь ремонт</p>
+                            работ, акт закрытия работ, гарантию до 5 лет на весь ремонт</p>
 
                         <p>Посетите наш офис по адресу «Москва-Сити», башня «Федерация», этаж 24, офис 4. Мы с удовольствием
                             ответим на все ваши вопросы</p>
@@ -4542,7 +4583,7 @@
 
                         <div class="schema__item sh-6">
                             <span class="schema-number">6.</span>Заканчиваем в срок
-                            <span class="schema-in">Вы получаете гарантию 3 года, подписываете акт о приеме работ.</span>
+                            <span class="schema-in">Вы получаете гарантию 5 лет, подписываете акт о приеме работ.</span>
                         </div>
                     </div>
                     <div class="call-btn">
@@ -4551,7 +4592,7 @@
                 </div>
                 <!--  /.container  -->
             </section>
-            <section class="FAQ">
+            <!-- <section class="FAQ">
                 <div class="container">
                     <h2 class="title">Часто задаваемые вопросы</h2>
 
@@ -4595,8 +4636,9 @@
                     </div>
 
                 </div>
-                <!--  /.container  -->
-            </section>
+
+            </section> -->
+
             <section class="main-slider">
                 <div class="container">
                     <div class="owl-carousel owl-carousela owl-theme">
@@ -4694,11 +4736,10 @@
                     <span style="padding-bottom: 0;">Колпакова 39</span><span class="page-footer__header" style="
     padding-top: 10px;
 ">Москва</span>
-                    <span style="padding-bottom: 0;">Пресненская наб. 12</span>
+                    <span style="padding-bottom: 0;">ул. Новослободская 52</span>
                     <span style="padding-bottom: 0;font-size: 16px;font-family: 'Museo Sans Cyrl 500',Arial,sans-serif;font-weight: 400;font-style: normal;">Башня федерация</span>
                     
                     <div class="page-footer__links" style="max-width: 165px;">
-                        <a href="http://remont-kvartiri.info/" style="font-size: 18px;color: white;background-color: red;padding: 2px 5px;border-radius: 14px;">На основной сайт</a>
                         <a href="#portfolio" class="page-footer__link portfolio-link">Ремонты клиентов</a>
                         <br>
                         <!----a href="https://vk.com/centrstroy_official" class="reviews__icon reviews__icon--vk" target="_blank">Вконтакте</a---->
@@ -4779,12 +4820,13 @@
     <script src="assets\js\jquery-1.12.4.min.js"></script>
 
     <style type="text/css">
-     .mfp-hide_a{display:none!important}button::-moz-focus-inner{padding:0;border:0}@font-face{font-family:'Open Sans Condensed';src:local('Open Sans Cond Light'),local(OpenSans-CondensedLight),url(assets/fonts/opensanscondlight.woff2) format("woff2"),url(assets/fonts/opensanscondlight.woff) format("woff"),url(assets/fonts/opensanscondlight.ttf) format("truetype");font-weight:300;font-style:normal;font-display:swap}@font-face{font-family:'Open Sans Condensed';src:local('Open Sans Cond Light Italic'),local(OpenSans-CondensedLightItalic),url(assets/fonts/opensanscondlightitalic.woff2) format("woff2"),url(assets/fonts/opensanscondlightitalic.woff) format("woff"),url(assets/fonts/opensanscondlightitalic.ttf) format("truetype");font-weight:300;font-style:italic;font-display:swap}@font-face{font-family:'Open Sans Condensed';src:local('Open Sans Condensed Bold'),local(OpenSans-CondensedBold),url(assets/fonts/opensanscondensedbold.woff2) format("woff2"),url(assets/fonts/opensanscondensedbold.woff) format("woff"),url(assets/fonts/opensanscondensedbold.ttf) format("truetype");font-weight:700;font-style:normal;font-display:swap}.popup-inner_a{position:relative;max-width:800px;padding:20px;margin:0 auto;background:#fff;-webkit-box-sizing:border-box;box-sizing:border-box}.popup-title_a{font-size:26px;padding:20px 0;color:#003c59;text-align:center}.popup-inner_a table{width:100%;padding:10px;border:1px;border-collapse:collapse;border-spacing:0}.popup-inner_a table tr{border:1px solid #ffd300;border-bottom:1px solid #ccc}.popup-inner_a td{font-family:Qanelas-Regular;font-size:12px;text-align:center;border-left:1px solid #ffd300}.popup-inner_a td:nth-child(2){text-align:left;padding-left:20px}.popup-text_a{margin-top:10px}.hidden-mobile{display:none}.visible-mobile_a{display:block}.clearfix:after{content:'';display:table;clear:both}.container_a{width:auto;padding:0 15px;margin:0 auto;-webkit-box-sizing:border-box;box-sizing:border-box}.bghtml{position:fixed;top:0;bottom:0;left:0;right:0;background-image:url(assets/img/bg.jpg);background-size:cover;background-position:top center;z-index:-99999}.form-wrapper{display:block;text-align:center;margin:0 0 15px;padding:0}.form-input{display:inline-block;vertical-align:top;width:100%;max-width:320px;font-size:16px;color:#0c1327;padding:14px 20px;border-radius:3px;border:2px solid #e0e0e0;background-color:#fff;-webkit-box-shadow:inset 3px 3px 1px 0 #f4f4f4;box-shadow:inset 3px 3px 1px 0 #f4f4f4;-webkit-box-sizing:border-box;box-sizing:border-box;outline:0}.form-button{display:inline-block;vertical-align:top;font-family:Qanelas-Bold,Arial,sans-serif;font-size:17px;text-align:center;text-decoration:none;color:#fff;letter-spacing:.6px;text-transform:uppercase;text-shadow:0 -1px 0 rgba(0,0,0,.2);border:1px solid #0052bd;border-radius:3px;padding:14px 10px;margin:0 auto;background-image:-o-linear-gradient(top,#59b3ff 0,#0e6dee 30%,#0050bd 100%);background-image:-webkit-gradient(linear,left top, left bottom,color-stop(0, #59b3ff),color-stop(30%, #0e6dee),to(#0050bd));background-image:linear-gradient(180deg,#59b3ff 0,#0e6dee 30%,#0050bd 100%);cursor:pointer;-webkit-box-sizing:border-box;box-sizing:border-box;font-family:'Museo Sans Cyrl 500',Arial,sans-serif!important}.form-button:hover{background-image:-o-linear-gradient(top,#59b3ff 0,#0e6dee 70%,#0456c5 100%);background-image:-webkit-gradient(linear,left top, left bottom,color-stop(0, #59b3ff),color-stop(70%, #0e6dee),to(#0456c5));background-image:linear-gradient(180deg,#59b3ff 0,#0e6dee 70%,#0456c5 100%)}.price_title{font-family:'Museo Sans Cyrl 700',Arial,sans-serif;font-weight:600;font-style:normal;font-size:38px;padding:87px 0 67px;line-height:1.1;letter-spacing:1px;text-align:center;color:#17234b}.title-description{font-size:18px;text-align:center;color:#ffd300;margin:0 0 25px}.price{background-color:#f5f6f6;padding-bottom:60px}.price-title{font-size:22px;font-weight:400;text-align:center;color:#000;margin:0 0 5px}.price-mark{display:block;font-size:16px;font-style:italic;color:#ffd300;text-align:center;margin:0 0 25px}.price-column{color:#000;margin-bottom:25px}.price-column:last-child{margin-bottom:0}.price-inner{position:relative;text-align:center;padding:135px 15px 15px;border:2px solid #125ca5;border-radius:14px;-webkit-transition:.4s;-o-transition:.4s;transition:.4s}.price-inner:before{content:'';position:absolute;top:-15px;left:50%;width:220px;height:140px;margin-left:-110px;background-repeat:no-repeat;background-position:top center;background-size: contain;}.price-inner-first:before{background-image:url(assets/img/price-before-1.png)}.price-inner-second:before{background-image:url(assets/img/price-before-2.png)}.price-header{font-family:'Museo Sans Cyrl 700',Arial,sans-serif;font-size:20px;font-weight:400;text-align:center;margin:0 0 25px}.price-header b{position:relative;text-transform:uppercase;letter-spacing:1.05px;font-size:25px;color:#00509e}.price-table{width:100%}.price-cell{display:block;font-size:14px;text-align:left;padding:0 0 10px}.price-cell--align{font-size:18px;text-align:center;padding:0 0 25px}.price-table--inline .price-cell--align{padding-bottom:10px;min-width:80px}.price-table--inline .price-cell{display:table-cell;vertical-align:top}.price-table--inline .price-cell--align{text-align:right}.price-table tr:last-child .price-cell--align{padding-bottom:0}.price-cell span{display:block;font-size:20px;color:#000;font-weight:600}.price-table--inline .price-cell{font-size:14px}.price .form-button{margin:24px auto 0;width:auto;font-family:'Museo Sans Cyrl 500',Arial,sans-serif}@media (min-width:585px){.bghtml{background-image:url(assets/img/bg.jpg)}.popup-inner_a td{font-size:16px}.popup-title_a{font-size:42px}}@media (min-width:768px){.container_a{width:750px}.bghtml{background-image:url(assets/img/bg.jpg)}.visible-mobile_a{display:none}.price-header{font-size:26px}.price-inner{padding-top:275px}.price-inner:before{width:400px;height:255px;margin-left:-200px}.price-inner-first:before{background-image:url(assets/img/price-before-1.png)}.price-inner-second:before{background-image:url(assets/img/price-before-2.png)}.price-cell span,.price-cell--align,.price-table--inline .price-cell{font-size:20px}}@media (min-width:992px){.container_a{width:950px}.hidden-desktop{display:none!important}.hidden-mobile{display:block!important}.bghtml{background-image:url(assets/img/bg.jpg)}.form-wrapper{display:inline-block;vertical-align:top;width:280px;margin:0 20px 40px}.form-button{margin-bottom:30px}.calculator-title{font-size:38px;margin:0 0 60px}.price .container_a{font-size:0}.price-wrapper{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;width:100%}.price-column{display:inline-block;vertical-align:top;width:49%;margin-right:2%;margin-bottom:0}.price-column:last-child{margin-right:0}.price-inner{padding:275px 20px 20px;height:calc(100% - 317px)}.price-inner:hover{-webkit-transform:translateY(-5px);-ms-transform:translateY(-5px);transform:translateY(-5px);-webkit-box-shadow:0 7px 25px 0 rgba(0,0,0,.2);box-shadow:0 7px 25px 0 rgba(0,0,0,.2);-webkit-transition:.4s;-o-transition:.4s;transition:.4s;border:2px solid #125ca5}.price-mark,.price-title{text-align:left}.price-cell{float:left;width:70%;font-size:16px;padding:0 0 20px}.price-cell--align{float:right;width:30%;text-align:right}.price-cell span,.price-cell--align{font-size:20px}}@media (min-width:1200px){.container_a{width:1170px}.bghtml{background-image:url(assets/img/bg.jpg)}.form-button,.form-input{font-size:18px}.price-header{font-size:27px}.title-description{font-size:20px}.price-cell span,.price-cell--align,.price-table--inline .price-cell{font-size:25px}}@media (max-width:768px){.price_title{font-size:28px;padding:57px 0 37px}}
+     .mfp-hide_a{display:none!important}button::-moz-focus-inner{padding:0;border:0}@font-face{font-family:'Open Sans Condensed';src:local('Open Sans Cond Light'),local(OpenSans-CondensedLight),url(assets/fonts/opensanscondlight.woff2) format("woff2"),url(assets/fonts/opensanscondlight.woff) format("woff"),url(assets/fonts/opensanscondlight.ttf) format("truetype");font-weight:300;font-style:normal;font-display:swap}@font-face{font-family:'Open Sans Condensed';src:local('Open Sans Cond Light Italic'),local(OpenSans-CondensedLightItalic),url(assets/fonts/opensanscondlightitalic.woff2) format("woff2"),url(assets/fonts/opensanscondlightitalic.woff) format("woff"),url(assets/fonts/opensanscondlightitalic.ttf) format("truetype");font-weight:300;font-style:italic;font-display:swap}@font-face{font-family:'Open Sans Condensed';src:local('Open Sans Condensed Bold'),local(OpenSans-CondensedBold),url(assets/fonts/opensanscondensedbold.woff2) format("woff2"),url(assets/fonts/opensanscondensedbold.woff) format("woff"),url(assets/fonts/opensanscondensedbold.ttf) format("truetype");font-weight:700;font-style:normal;font-display:swap}.popup-inner_a{position:relative;max-width:800px;padding:20px;margin:0 auto;background:#fff;-webkit-box-sizing:border-box;box-sizing:border-box}.popup-title_a{font-size:26px;padding:20px 0;color:#003c59;text-align:center}.popup-inner_a table{width:100%;padding:10px;border:1px;border-collapse:collapse;border-spacing:0}.popup-inner_a table tr{border:1px solid #ffd300;border-bottom:1px solid #ccc}.popup-inner_a td{font-family:Qanelas-Regular;font-size:12px;text-align:center;border-left:1px solid #ffd300}.popup-inner_a td:nth-child(2){text-align:left;padding-left:20px}.popup-text_a{margin-top:10px}.hidden-mobile{display:none}.visible-mobile_a{display:block}.clearfix:after{content:'';display:table;clear:both}.container_a{width:auto;padding:0 15px;margin:0 auto;-webkit-box-sizing:border-box;box-sizing:border-box}.bghtml{position:fixed;top:0;bottom:0;left:0;right:0;background-image:url(assets/img/bg.jpg);background-size:cover;background-position:top center;z-index:-99999}.form-wrapper{display:block;text-align:center;margin:0 0 15px;padding:0}.form-input{display:inline-block;vertical-align:top;width:100%;max-width:320px;font-size:16px;color:#0c1327;padding:14px 20px;border-radius:3px;border:2px solid #e0e0e0;background-color:#fff;-webkit-box-shadow:inset 3px 3px 1px 0 #f4f4f4;box-shadow:inset 3px 3px 1px 0 #f4f4f4;-webkit-box-sizing:border-box;box-sizing:border-box;outline:0}.form-button{display:inline-block;vertical-align:top;font-family:Qanelas-Bold,Arial,sans-serif;font-size:17px;text-align:center;text-decoration:none;color:#fff;letter-spacing:.6px;text-transform:uppercase;text-shadow:0 -1px 0 rgba(0,0,0,.2);border:1px solid #0052bd;border-radius:3px;padding:14px 10px;margin:0 auto;background-image:-o-linear-gradient(top,#59b3ff 0,#0e6dee 30%,#0050bd 100%);background-image:-webkit-gradient(linear,left top, left bottom,color-stop(0, #59b3ff),color-stop(30%, #0e6dee),to(#0050bd));background-image:linear-gradient(180deg,#59b3ff 0,#0e6dee 30%,#0050bd 100%);cursor:pointer;-webkit-box-sizing:border-box;box-sizing:border-box;font-family:'Museo Sans Cyrl 500',Arial,sans-serif!important}.form-button:hover{background-image:-o-linear-gradient(top,#59b3ff 0,#0e6dee 70%,#0456c5 100%);background-image:-webkit-gradient(linear,left top, left bottom,color-stop(0, #59b3ff),color-stop(70%, #0e6dee),to(#0456c5));background-image:linear-gradient(180deg,#59b3ff 0,#0e6dee 70%,#0456c5 100%)}.price_title{font-family:'Museo Sans Cyrl 700',Arial,sans-serif;font-weight:600;font-style:normal;font-size:38px;padding:87px 0 67px;line-height:1.1;letter-spacing:1px;text-align:center;color:#17234b}.title-description{font-size:18px;text-align:center;color:#ffd300;margin:0 0 25px}.price{background-color:#f5f6f6;padding-bottom:60px}.price-title{font-size:22px;font-weight:400;text-align:center;color:#000;margin:0 0 5px}.price-mark{display:block;font-size:16px;font-style:italic;color:#ffd300;text-align:center;margin:0 0 25px}.price-column{color:#000;margin-bottom:25px}.price-column:last-child{margin-bottom:0}.price-inner{position:relative;text-align:center;padding:135px 15px 15px;border:2px solid #125ca5;border-radius:14px;-webkit-transition:.4s;-o-transition:.4s;transition:.4s}.price-inner:before{content:'';position:absolute;top:-4px;left:50%;width:220px;height:140px;margin-left:-110px;background-repeat:no-repeat;background-position:top center;background-size: contain;}.price-inner-first:before{background-image:url(assets/img/price-before-1.png)}.price-inner-second:before{background-image:url(assets/img/price-before-2.png)}.price-header{font-family:'Museo Sans Cyrl 700',Arial,sans-serif;font-size:20px;font-weight:400;text-align:center;margin:0 0 25px}.price-header b{position:relative;text-transform:uppercase;letter-spacing:1.05px;font-size:25px;color:#00509e}.price-table{width:100%}.price-cell{display:block;font-size:14px;text-align:left;padding:0 0 10px}.price-cell--align{font-size:18px;text-align:center;padding:0 0 25px}.price-table--inline .price-cell--align{padding-bottom:10px;min-width:80px}.price-table--inline .price-cell{display:table-cell;vertical-align:top}.price-table--inline .price-cell--align{text-align:right}.price-table tr:last-child .price-cell--align{padding-bottom:0}.price-cell span{display:block;font-size:20px;color:#000;font-weight:600}.price-table--inline .price-cell{font-size:14px}.price .form-button{margin:24px auto 0;width:auto;font-family:'Museo Sans Cyrl 500',Arial,sans-serif}@media (min-width:585px){.bghtml{background-image:url(assets/img/bg.jpg)}.popup-inner_a td{font-size:16px}.popup-title_a{font-size:42px}}@media (min-width:768px){.container_a{width:750px}.bghtml{background-image:url(assets/img/bg.jpg)}.visible-mobile_a{display:none}.price-header{font-size:26px}.price-inner{padding-top:275px}.price-inner:before{width:400px;height:255px;margin-left:-200px}.price-inner-first:before{background-image:url(assets/img/price-before-1.png)}.price-inner-second:before{background-image:url(assets/img/price-before-2.png)}.price-cell span,.price-cell--align,.price-table--inline .price-cell{font-size:20px}}@media (min-width:992px){.container_a{width:950px}.hidden-desktop{display:none!important}.hidden-mobile{display:block!important}.bghtml{background-image:url(assets/img/bg.jpg)}.form-wrapper{display:inline-block;vertical-align:top;width:280px;margin:0 20px 40px}.form-button{margin-bottom:30px}.calculator-title{font-size:38px;margin:0 0 60px}.price .container_a{font-size:0}.price-wrapper{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;width:100%;justify-content: center;}.price-column{display:inline-block;vertical-align:top;width:62%;margin-right:2%;margin-bottom:0}.price-column:last-child{margin-right:0}.price-inner{padding:275px 30px 33px;height:calc(100% - 317px)}.price-inner:hover{-webkit-transform:translateY(-5px);-ms-transform:translateY(-5px);transform:translateY(-5px);-webkit-box-shadow:0 7px 25px 0 rgba(0,0,0,.2);box-shadow:0 7px 25px 0 rgba(0,0,0,.2);-webkit-transition:.4s;-o-transition:.4s;transition:.4s;border:2px solid #125ca5}.price-mark,.price-title{text-align:left}.price-cell{float:left;width:70%;font-size:16px;padding:0 0 20px}.price-cell--align{float:right;width:30%;text-align:right}.price-cell span,.price-cell--align{font-size:20px}}@media (min-width:1200px){.container_a{width:1170px}.bghtml{background-image:url(assets/img/bg.jpg)}.form-button,.form-input{font-size:18px}.price-header{font-size:27px}.title-description{font-size:20px}.price-cell span,.price-cell--align,.price-table--inline .price-cell{font-size:25px}}@media (max-width:768px){.price_title{font-size:28px;padding:57px 0 37px}}
     </style>
     
 
     <!-- Калькулятор, его отправка и валидация номера -->
     <script src="assets\js\libs-mob.js"></script>
+    <!-- TODO апдейтни: -->
     <script src="assets\js\custom-mob.js"></script>
 
 

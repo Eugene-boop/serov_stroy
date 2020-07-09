@@ -1298,10 +1298,10 @@ function calculateStep(step) {
 }
 
 setTimeout(function() {
-	calculateStep(1);
+	calculateStep(2);
 }, 3);
 
-calculateStep(1);
+calculateStep(2);
 
     // Step 1
 
