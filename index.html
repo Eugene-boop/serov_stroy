@@ -3901,7 +3901,7 @@
 
                     <div class="features__column features__column--plus">
                         <div class="features__inner">
-                            <h3>5 причин выбрать нас</h3>
+                            <h3>Наши преимущества</h3>
 
                             <ul class="features__items">
                                 <li class="features__item features__item--1">
@@ -3918,42 +3918,54 @@
                                     <span class="bold">Лучшие мастера</span> Мастера проходят курсы и переаттестацию, все сотрудники - русские.
                                     5 уровней контроля качества</li>
 
-                                <li class="features__item features__item--5">
-                                    <span class="bold">Помогаем выбрать все материалы</span> С поставщиками строительных материалов заключены
-                                    долгосрочные договора</li>
+                                <li class="features__item features__item--2
+                                features3__item--2">
+                                    <span class="bold">Цены ниже конкурентов.</span> </li>
                             </ul>
                         </div>
                     </div>
 
                     <div class="features__column features__column--plus features__column--plus2" bis_skin_checked="1" style="
     float: none;
-    display: block;
-    margin: 0 auto;
+    display: inline-block;
+    max-width: 100%;
+    /* margin: 0 65px; */
 ">
                         <div class="features__inner" bis_skin_checked="1" style="
-    padding-top: 40px;
-    padding-left: 38px;
+    /* margin: 0; */
+    /* padding-top: 40px; */
+    max-width: 100%;
 ">
                             
 
-                            <ul class="features__items">
-                                <li class="features__item features__item--1 features3__item--1" style="    margin-bottom: 40px;">
+                            <h3>А ещё мы</h3><ul class="features__items" style="
+    display: flex;
+    flex-wrap: wrap;
+">
+                                <li class="features__item features__item--3
+                                features3__item--3" style="
+    max-width: 420px;
+    margin-right: 16px;
+">
+                                    <span class="bold">Решаем все вопросы за вас</span> Согласование о перепланировке, отключение стояков, электро-проект, акты скрытых работ для управляющей компании.</li><li class="features__item features__item--1 features3__item--1" style="margin-bottom: 40px;max-width: 420px;">
                                     <span class="bold">Производим работы без проживания на объекте.</span></li>
 
-                                <li class="features__item features__item--2
-                                features3__item--2">
-                                    <span class="bold">Цены ниже конкурентов.</span> </li>
+                                
 
-                                <li class="features__item features__item--3
-                                features3__item--3">
-                                    <span class="bold">Решаем все вопросы за вас</span> Согласование о перепланировке, отключение стояков, электро-проект, акты скрытых работ для управляющей компании.</li>
+                                
 
-                                <li class="features__item features__item--4
-                                features3__item--4">
-                                    <span class="bold">Авторский надзор на всех стадиях проекта</span></li>
+                                <li class="features__item features__item--5" style="
+    max-width: 420px;
+    margin-right: 16px;
+">
+                                    <span class="bold">Помогаем выбрать все материалы</span> С поставщиками строительных материалов заключены
+                                    долгосрочные договора</li><li class="features__item features__item--4
+                                features3__item--4" style="
+    max-width: 420px;
+">
+                                    <span class="bold">Производим авторский надзор на всех стадиях проекта</span></li>
                             </ul>
-                        </div>
-                    </div>
+                        </div>  
 
                     <style>
                         .features3__item--1:before, .features3__item--2:before,.features3__item--3:before,.features3__item--4:before {
@@ -3992,6 +4004,69 @@
                                 padding-bottom: 0px;
                             }
                         }
+
+                        @media (max-width: 993px) {
+                            .features__column--plus2 .features__inner{
+                                max-width: 420px !important;
+                            }
+
+                          
+
+
+                        }
+
+
+
+                        @media (min-width: 1100px) {
+                            .features__column {
+                                width: auto;
+                            }
+                            .features__column:nth-of-type(1), .features__column:nth-of-type(3) {
+                                padding-left: 71px;
+                            }
+                        }
+
+                        @media (max-width: 1167px) {
+                            .features3__item--1, .features3__item--4 {
+                                flex-basis: 30% !important;
+                            }
+                            .features__column {
+                                width: auto !important;
+                            }
+                        }
+
+                        @media (max-width: 1030px) {
+                            .features__column {
+                                width: 50% !important;
+                            }
+
+                            .features__column:nth-of-type(3) {
+                                margin: 0 auto;
+                                display: block !important;
+                            }
+                        }
+
+                        @media (max-width: 992px) {
+                            .features__column--plus {
+                                display: block;
+                                float: none;
+                                width: 100%;
+                                margin: 0 auto;
+                            }
+                        }
+
+                        @media (max-width: 993px) {
+                            .features3__item--1, .features3__item--4 {
+                                flex-basis: 100% !important;
+                            }
+                        }
+
+                        @media (min-width: 993px) {
+                            .features__column--plus2 {
+                                width: 100% !important;
+                            }
+                        }
+
                     </style>
                 </div>
                 <!--  /.container  -->
@@ -4878,7 +4953,7 @@
             <section class="contacts">
                 <h2 class="title">Наши контакты</h2>
                 <div class="contacts__map">
-                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Afb91b469bedd63b26b3e10bf595b287f403077074ddd38e6730079768873fca1&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A14fe45093da1a06be9b2aebe44f6f5a5a5a3ac66456832cccdf4ca738ebe0f55&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
                     <!---div class="ymap-container">
 															<div class="loader loader-default"></div>
 															<div id="map-yandex"></div>
@@ -4941,7 +5016,6 @@
     padding-top: 10px;
 ">Москва</span>
                     <span style="padding-bottom: 0;">ул. Новослободская 52</span>
-                    <span style="padding-bottom: 0;font-size: 16px;font-family: 'Museo Sans Cyrl 500',Arial,sans-serif;font-weight: 400;font-style: normal;">Башня федерация</span>
                     
                     <div class="page-footer__links" style="max-width: 165px;">
                         <a href="#portfolio" class="page-footer__link portfolio-link">Ремонты клиентов</a>
